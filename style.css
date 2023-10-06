@@ -1,0 +1,114 @@
+:root {
+  --primaryColor: #6cb52d;
+  --alterColor: #692915;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--primaryColor) !important;
+}
+
+*::selection {
+  color: var(--primaryColor);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini-dark.png");
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.content-solarJava,
+.content-solarAngular {
+  width: 25%;
+  aspect-ratio: 1;
+}
+
+.solarJava,
+.solarAngular {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.planet-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+
+.planet {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  margin: 50%;
+}
+
+#belt {
+  height: 50%;
+  width: 50%;
+  animation: spin 50s infinite linear;
+  margin-top: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  main .firstDiv {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  main .alterWidthLeft {
+    width: 25% !important;
+  }
+
+  main .alterWidthRight {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .solarSystem {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  main .solarAngular,
+  main .solarJava {
+    width: 75%;
+    height: 75%;
+  }
+}
