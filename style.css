@@ -1,17 +1,9 @@
-:root {
-  --primaryColor: #6cb52d;
-  --alterColor: #692915;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Courier+Prime:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: var(--primaryColor) !important;
-}
-
-*::selection {
-  color: var(--primaryColor);
 }
 
 html,
@@ -19,6 +11,38 @@ body {
   width: 100%;
   height: 100%;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini-dark.png");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bodoni Moda", serif;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  color: white !important;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection,
+a::selection {
+  background-color: #dc8173;
+}
+
+h3::first-line {
+  color: #dc8173;
+}
+
+p {
+  color: white;
+  text-align: justify;
+}
+
+img {
+  width: 30px;
 }
 
 li {
@@ -29,14 +53,17 @@ a {
   text-decoration: none !important;
 }
 
-.content-solarJava,
-.content-solarAngular {
+.tecnologias {
+  display: flex;
+  align-items: center;
+}
+
+.content-solar-system {
   width: 25%;
   aspect-ratio: 1;
 }
 
-.solarJava,
-.solarAngular {
+.solar-system {
   position: relative;
   top: 50%;
   left: 50%;
@@ -83,31 +110,84 @@ a {
   }
 }
 
+.vibrate-1 {
+  -webkit-animation: vibrate-1 0.5s linear infinite both;
+  animation: vibrate-1 0.5s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
 @media (min-width: 768px) {
-  main .firstDiv {
-    display: flex !important;
-    flex-direction: row !important;
-  }
-
-  main .alterWidthLeft {
-    width: 25% !important;
-  }
-
-  main .alterWidthRight {
-    width: 75% !important;
+  main {
+    width: 75%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1024px) {
-  main .solarSystem {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-around !important;
-    align-items: center !important
+  main {
+    width: 50%;
+    margin: 0 auto;
   }
 
-  main .solarAngular,
-  main .solarJava {
+  main .tecnologias {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+
+  main .solar-system {
     width: 75%;
     height: 75%;
   }
