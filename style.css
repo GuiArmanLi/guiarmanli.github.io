@@ -32,7 +32,7 @@ a::selection {
   background-color: #dc8173;
 }
 
-h3::first-line {
+h3 {
   color: #dc8173;
 }
 
@@ -51,6 +51,11 @@ li {
 
 a {
   text-decoration: none !important;
+}
+
+i {
+  display: block;
+  text-align: center;
 }
 
 .tecnologias {
