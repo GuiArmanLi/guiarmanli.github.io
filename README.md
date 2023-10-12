@@ -2,13 +2,13 @@
 
 Bem-vindo ao meu portfólio pessoal! Este é o meu espaço onde compartilho meu trabalho e projetos.
 
-## Sobre Mim
+### Sobre Mim
 
 - **Nome:** Guilherme Santana Pessa
 - **Ocupação:** Estudante / FreeLancer
 - **Localização:** São Paulo
 
-## Projetos Destacados
+### Projetos Destacados
 
 1. **CheckOut de Sáude Simples**
    - (Em Manutenção)
@@ -19,7 +19,7 @@ Bem-vindo ao meu portfólio pessoal! Este é o meu espaço onde compartilho meu 
 3. **Bretas Construcoes e Reformas**
    - https://little-projects-xt3p.vercel.app/
 
-## Contato
+### Contato
 
 Fique à vontade para entrar em contato comigo:
 
