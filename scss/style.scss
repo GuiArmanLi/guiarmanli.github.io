@@ -20,7 +20,6 @@ h4 {
   font-family: "Bodoni Moda", serif;
   font-family: "Courier Prime", monospace;
   text-align: center;
-  color: white !important;
 }
 
 h1::selection,
@@ -88,7 +87,7 @@ i {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  border: 1px solid rgb(255, 255, 255, 0.25);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
