@@ -4,57 +4,104 @@
   margin: 0;
   box-sizing: border-box; }
 
-html,
 body {
   width: 100%;
   height: 100%;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini-dark.png"); }
+  background-color: #222222 !important; }
+  body h1,
+  body h2,
+  body h3,
+  body h4 {
+    color: #eeee;
+    text-align: center; }
+  body ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0; }
+  body li {
+    list-style-type: none; }
+  body span,
+  body p {
+    color: #eeee;
+    text-align: justify; }
+  body a {
+    color: #eeee;
+    text-decoration: none; }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Bodoni Moda", serif;
-  font-family: "Courier Prime", monospace;
-  text-align: center; }
+header {
+  position: sticky;
+  background-color: #33291e;
+  height: 50px; }
+  header nav,
+  header ul {
+    height: 100%; }
+  header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  header a {
+    padding: 15px; }
 
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-p::selection,
-a::selection {
-  background-color: #dc8173; }
-
-h3 {
-  color: #dc8173; }
-
-p {
-  color: white;
-  text-align: justify; }
-
-img {
-  width: 30px; }
-
-li {
-  list-style-type: none; }
-
-a {
-  text-decoration: none !important; }
-
-i {
-  display: block;
-  text-align: center; }
-
-.tecnologias {
+main article {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #665c51; }
+  main article img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    border: 1px solid #eeee;
+    border-radius: 10px;
+    margin: auto; }
+  main article h4 {
+    margin: 25px 0 5px; }
+  main article p {
+    margin: 0; }
+  main article svg {
+    color: #33291e;
+    width: 16px;
+    height: 16px; }
+main section:nth-child(2) {
+  padding: 25px;
+  background-color: #998b7c; }
+  main section:nth-child(2) div {
+    padding-left: 10px;
+    border-left: 5px solid #33291e; }
+  main section:nth-child(2) a {
+    color: #33291e;
+    text-decoration: underline !important; }
+main section:nth-child(3) {
+  background-color: #665c51;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+main section:last-child {
+  padding: 10px;
+  background-color: #998b7c; }
+  main section:last-child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; }
+  main section:last-child i {
+    padding: 0.25rem 0.5rem;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    background-color: #33291e;
+    color: #eeee; }
+main .tecnologias {
   display: flex;
   align-items: center; }
-
-.content-solar-system {
+main .content-solar-system {
   width: 25%;
   aspect-ratio: 1; }
-
-.solar-system {
+main .solar-system {
   position: relative;
   top: 50%;
   left: 50%;
@@ -64,88 +111,62 @@ i {
   align-items: center;
   width: 100%;
   height: 100%; }
-
-.planet-orbit {
+main .planet-orbit {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
   border-radius: 50%; }
-
-.planet {
+main .planet {
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   margin: 50%; }
-
-#belt {
+main #belt {
   height: 50%;
   width: 50%;
   animation: spin 50s infinite linear;
   margin-top: 50%; }
+
+footer {
+  background-color: #eeee; }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto; }
+  footer svg {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    color: #222222; }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-.vibrate-1 {
-  -webkit-animation: vibrate-1 0.5s linear infinite both;
-  animation: vibrate-1 0.5s linear infinite both; }
-
-@-webkit-keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0); }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px); }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px); }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    transform: translate(2px, 2px); }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    transform: translate(2px, -2px); }
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0); } }
-@keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0); }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px); }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px); }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    transform: translate(2px, 2px); }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    transform: translate(2px, -2px); }
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0); } }
 @media (min-width: 768px) {
-  main {
-    width: 75%;
-    margin: 0 auto; } }
+  section:nth-child(3) {
+    padding: 50px; } }
 @media (min-width: 1024px) {
-  main {
-    width: 50%;
-    margin: 0 auto; }
-
+  main article {
+    flex-direction: row; }
+    main article h4 {
+      display: block; }
+    main article div {
+      display: flex;
+      flex-direction: column;
+      flex: 50%; }
+      main article div div {
+        justify-content: center; }
+    main article ul {
+      display: flex; }
   main .tecnologias {
     display: flex;
     flex-direction: row !important;
     justify-content: space-around; }
-
   main .solar-system {
     width: 75%;
     height: 75%; } }

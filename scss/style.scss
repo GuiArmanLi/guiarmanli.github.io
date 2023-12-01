@@ -1,108 +1,222 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Courier+Prime:ital@1&display=swap");
 
+$white: #eeee;
+$one: #33291e;
+$two: #665c51;
+
+$three: #998b7c;
+$black: #222222;
+$font: "Bodoni Moda", serif, "Courier Prime", monospace;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html,
 body {
   width: 100%;
   height: 100%;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/memphis-mini-dark.png");
+  background-color: $black !important;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $white;
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  span,
+  p {
+    color: $white;
+    text-align: justify;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Bodoni Moda", serif;
-  font-family: "Courier Prime", monospace;
-  text-align: center;
+header {
+  position: sticky;
+  background-color: $one;
+
+  height: 50px;
+
+  nav,
+  ul {
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    padding: 15px;
+  }
 }
 
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-p::selection,
-a::selection {
-  background-color: #dc8173;
+main {
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: $two;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 1;
+
+      border: 1px solid $white;
+      border-radius: 10px;
+      margin: auto;
+    }
+
+    h4 {
+      margin: 25px 0 5px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    svg {
+      color: $one;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  section:nth-child(2) {
+    padding: 25px;
+    background-color: $three;
+
+    div {
+      padding-left: 10px;
+      border-left: 5px solid $one;
+    }
+
+    a {
+      color: $one;
+      text-decoration: underline !important;
+    }
+  }
+
+  section:nth-child(3) {
+    background-color: $two;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section:last-child {
+    padding: 10px;
+    background-color: $three;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    i {
+      padding: 0.25rem 0.5rem;
+      font-size: 12px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 0.25rem;
+      background-color: $one;
+      color: $white;
+    }
+  }
+
+  .tecnologias {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-solar-system {
+    width: 25%;
+    aspect-ratio: 1;
+  }
+
+  .solar-system {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .planet-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+
+  .planet {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin: 50%;
+  }
+
+  #belt {
+    height: 50%;
+    width: 50%;
+    animation: spin 50s infinite linear;
+    margin-top: 50%;
+  }
 }
 
-h3 {
-  color: #dc8173;
-}
+footer {
+  background-color: $white;
 
-p {
-  color: white;
-  text-align: justify;
-}
+  ul {
+    display: flex;
+    justify-content: space-around;
 
-img {
-  width: 30px;
-}
+    width: 50%;
+    margin: 0 auto;
+  }
 
-li {
-  list-style-type: none;
-}
+  svg {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
 
-a {
-  text-decoration: none !important;
-}
-
-i {
-  display: block;
-  text-align: center;
-}
-
-.tecnologias {
-  display: flex;
-  align-items: center;
-}
-
-.content-solar-system {
-  width: 25%;
-  aspect-ratio: 1;
-}
-
-.solar-system {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-}
-
-.planet-orbit {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 50%;
-}
-
-.planet {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  margin: 50%;
-}
-
-#belt {
-  height: 50%;
-  width: 50%;
-  animation: spin 50s infinite linear;
-  margin-top: 50%;
+    color: $black;
+  }
 }
 
 @keyframes spin {
@@ -114,85 +228,45 @@ i {
   }
 }
 
-.vibrate-1 {
-  -webkit-animation: vibrate-1 0.5s linear infinite both;
-  animation: vibrate-1 0.5s linear infinite both;
-}
-
-@-webkit-keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-}
-@keyframes vibrate-1 {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-  20% {
-    -webkit-transform: translate(-2px, 2px);
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    -webkit-transform: translate(2px, 2px);
-    transform: translate(2px, 2px);
-  }
-  80% {
-    -webkit-transform: translate(2px, -2px);
-    transform: translate(2px, -2px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-}
-
 @media (min-width: 768px) {
-  main {
-    width: 75%;
-    margin: 0 auto;
+  section:nth-child(3) {
+    padding: 50px;
   }
 }
 
 @media (min-width: 1024px) {
   main {
-    width: 50%;
-    margin: 0 auto;
-  }
+    article {
+      flex-direction: row;
 
-  main .tecnologias {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-around;
-  }
+      h4 {
+        display: block;
+      }
 
-  main .solar-system {
-    width: 75%;
-    height: 75%;
+      div {
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+
+        div {
+          justify-content: center;
+        }
+      }
+
+      ul {
+        display: flex;
+      }
+    }
+
+    .tecnologias {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-around;
+    }
+
+    .solar-system {
+      width: 75%;
+      height: 75%;
+    }
   }
 }
