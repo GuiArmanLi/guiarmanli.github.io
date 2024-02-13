@@ -22,25 +22,18 @@ body {
   h1,
   h2,
   h3,
-  h4 {
+  li,
+  p {
     color: $white;
-    text-align: center;
   }
 
   ul {
     display: flex;
     justify-content: space-around;
-    padding: 0;
-    margin: 0;
   }
 
   li {
     list-style-type: none;
-  }
-  span,
-  p {
-    color: $white;
-    text-align: center;
   }
 
   a {
@@ -49,148 +42,16 @@ body {
   }
 }
 
-header {
-  position: sticky;
-  background-color: $one;
-
-  height: 50px;
-
-  nav,
-  ul {
-    height: 100%;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  a {
-    padding: 15px;
-  }
-}
-
 main {
-  article {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    background-color: $two;
-
-    img {
-      display: block;
-      max-width: 300px;
-      width: 100%;
-      aspect-ratio: 1;
-
-      border: 1px solid $white;
-      border-radius: 10px;
-      margin: auto;
-    }
-
-    h4 {
-      margin: 25px 0 5px;
-    }
-
-    svg {
-      color: $one;
-      width: 16px;
-      height: 16px;
-    }
-  }
-
-  .projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
-    padding: 25px;
-    background-color: $three;
-
-    div {
-      padding-top: 15px;
-      border-top: 5px solid $one;
-    }
-
-    a {
-      color: $one;
-      text-decoration: underline !important;
-    }
-  }
-
-  section:nth-child(3) {
-    background-color: $two;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .educacao {
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-
-    i {
-      padding: 0.25rem 0.5rem;
-      font-size: 12px;
-      text-align: center;
-      vertical-align: middle;
-      border-radius: 0.25rem;
-      background-color: $one;
-      color: $white;
-    }
-    padding: 10px;
-    background-color: $four !important;
-  }
-}
-
-footer {
-  svg {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-
-    color: $black;
-  }
   display: flex;
-  justify-content: center;
-  background-color: $white;
+  flex-direction: column;
+  padding: 25px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1024px) {
-  main {
-    article {
-      flex-direction: row;
-
-      .profile {
-        flex-direction: row !important;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .objetivos_hobbies {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-      }
-
-      div:first-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
 }

@@ -11,120 +11,24 @@ body {
   body h1,
   body h2,
   body h3,
-  body h4 {
-    color: #eeee;
-    text-align: center; }
+  body li,
+  body p {
+    color: #eeee; }
   body ul {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0; }
+    justify-content: space-around; }
   body li {
     list-style-type: none; }
-  body span,
-  body p {
-    color: #eeee;
-    text-align: center; }
   body a {
     color: #eeee;
     text-decoration: none; }
 
-header {
-  position: sticky;
-  background-color: #33291e;
-  height: 50px; }
-  header nav,
-  header ul {
-    height: 100%; }
-  header ul {
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 25px; }
+  main ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  header a {
-    padding: 15px; }
-
-main article {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  background-color: #665c51; }
-  main article img {
-    display: block;
-    max-width: 300px;
-    width: 100%;
-    aspect-ratio: 1;
-    border: 1px solid #eeee;
-    border-radius: 10px;
-    margin: auto; }
-  main article h4 {
-    margin: 25px 0 5px; }
-  main article svg {
-    color: #33291e;
-    width: 16px;
-    height: 16px; }
-main .projetos {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 25px;
-  background-color: #998b7c; }
-  main .projetos div {
-    padding-top: 15px;
-    border-top: 5px solid #33291e; }
-  main .projetos a {
-    color: #33291e;
-    text-decoration: underline !important; }
-main section:nth-child(3) {
-  background-color: #665c51;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-main .educacao {
-  padding: 10px;
-  background-color: #b3a393 !important; }
-  main .educacao div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; }
-  main .educacao i {
-    padding: 0.25rem 0.5rem;
-    font-size: 12px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0.25rem;
-    background-color: #33291e;
-    color: #eeee; }
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: #eeee; }
-  footer svg {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-    color: #222222; }
-
-@media (min-width: 1024px) {
-  main article {
-    flex-direction: row; }
-    main article .profile {
-      flex-direction: row !important;
-      justify-content: center;
-      align-items: center; }
-    main article .objetivos_hobbies {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%; }
-    main article div:first-child {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    main article ul {
-      display: flex;
-      flex-direction: column; } }
+    flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
