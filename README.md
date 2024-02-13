@@ -1,30 +1,30 @@
-# Portfólio Pessoal
+# Portfólio
 
 Bem-vindo ao meu portfólio pessoal! Este é o meu espaço onde compartilho meu trabalho e projetos.
 
 ### Sobre Mim
 
 - **Nome:** Guilherme Santana Pessa
-- **Ocupação:** Estudante / FreeLancer
+- **Ocupação:** Estudante / Repositor Veran
 - **Localização:** São Paulo
 
-### Projetos Destacados
+### Projetos
 
-1. **CheckOut de Sáude Simples**
-   - (Em Manutenção)
+1. **My Manga**
+   - (Em Andamento)
 
-2. **Vitrine Virtual**
-   - (Em Manutenção)
+2. **KanBan**
+   - (Em Andamento)
 
 3. **Bretas Construcoes e Reformas**
-   - https://little-projects-xt3p.vercel.app/
+   - [https://little-projects-xt3p.vercel.app/](https://bretas-construcoes-e-reformas.vercel.app/)
 
 ### Contato
 
 Fique à vontade para entrar em contato comigo:
 
-- E-mail: guilhermesantanapessa12@gmail.com 
-- **Site:** https://guiarmanli.github.io/
-- **LinkedIn:** https://www.linkedin.com/in/guilherme-santana-pessa-5a6a72170/
+- E-mail: guilhermesantanapessa12@gmail.com
+- WhatsApp: 55 11 946867628
 
-Obrigado por visitar o meu portfólio! Estou ansioso para colaborar em projetos interessantes e fazer novas conexões.
+Para sugestoes, deixe em meu site:
+- **Site:** https://guiarmanli.github.io/
