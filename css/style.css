@@ -2,18 +2,16 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #eeee; }
 
 body {
   width: 100%;
   height: 100%;
   background-color: #222222 !important; }
-  body h1,
   body h2,
-  body h3,
-  body li,
-  body p {
-    color: #eeee; }
+  body h3 {
+    margin-top: 25px; }
   body ul {
     display: flex;
     justify-content: space-around; }
@@ -30,5 +28,10 @@ main {
   main ul {
     display: flex;
     flex-direction: column; }
+
+@media (min-width: 1024px) {
+  main {
+    width: 50%;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

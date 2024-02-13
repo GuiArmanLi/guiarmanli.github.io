@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Courier+Prime:ital@1&display=swap");
 
 $white: #eeee;
-$one: #33291e;
-$two: #665c51;
-$three: #998b7c;
-$four: #b3a393;
 $black: #222222;
 $font: "Bodoni Moda", serif, "Courier Prime", monospace;
 
@@ -12,6 +8,7 @@ $font: "Bodoni Moda", serif, "Courier Prime", monospace;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: $white;
 }
 
 body {
@@ -19,12 +16,9 @@ body {
   height: 100%;
   background-color: $black !important;
 
-  h1,
   h2,
-  h3,
-  li,
-  p {
-    color: $white;
+  h3 {
+    margin-top: 25px;
   }
 
   ul {
@@ -54,4 +48,8 @@ main {
 }
 
 @media (min-width: 1024px) {
+  main {
+    width: 50%;
+    margin: auto;
+  }
 }
