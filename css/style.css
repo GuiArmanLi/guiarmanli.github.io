@@ -20,6 +20,8 @@ body {
   body a {
     color: #eeee;
     text-decoration: none; }
+  body input {
+    color: #222222; }
 
 main {
   display: flex;
