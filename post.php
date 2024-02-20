@@ -1,34 +1,28 @@
 <?php
 require_once 'vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
+$dotenv->load();
+
 use Doctrine\DBAL\DriverManager;
 
-$host = getenv("HOST"); #Ainda local
-$port = getenv("PORT");
-$dbname = getenv("DBNAME");
-$username = getenv("USERNAME");
-$password = getenv("PASSWORD");
-$tableName = getenv("TABLE_NAME");
-
 $connectionParams = [
-    'dbname' => "site",
-    'user' => "postgres",
-    'password' => "admin",
-    'host' => "localhost",
+    'dbname' => getenv("DB_NAME"),
+    'user' => getenv("DB_USERNAME"),
+    'password' => getenv("PASSWORD"),
+    'host' => getenv("HOST"),   #Ainda local
     'driver' => 'pdo_pgsql',
 ];
 
-$connection = DriverManager::getConnection($connectionParams);
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-
-$query = "INSERT INTO users_test (name, email) VALUES ('$name', '$email')";
 try {
+    $connection = DriverManager::getConnection($connectionParams);
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    $query = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
     $connection->executeQuery($query);
-    
 } catch (Exception $error) {
-    echo "Erro: " . $error->getMessage();
+    echo $error->getMessage();
     exit;
 }
-
-echo "Enviado";
