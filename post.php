@@ -20,9 +20,12 @@ try {
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    $query = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
-    $connection->executeQuery($query);
+    $save = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
+    $connection->executeQuery($save);
+    
 } catch (Exception $error) {
     echo $error->getMessage();
     exit;
 }
+
+
