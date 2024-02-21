@@ -1,3 +1,4 @@
+c.sass-cache/
 vendor/
-.sass-cache/
-.env
+
+connection.env
