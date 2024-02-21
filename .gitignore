@@ -1,4 +1,4 @@
 c.sass-cache/
 vendor/
 
-connection.env
+.env

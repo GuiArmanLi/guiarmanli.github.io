@@ -22,7 +22,7 @@ try {
 
     $save = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
     $connection->executeQuery($save);
-    
+
 } catch (Exception $error) {
     echo $error->getMessage();
     exit;
