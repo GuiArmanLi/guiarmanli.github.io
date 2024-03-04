@@ -10,7 +10,7 @@ $connectionParams = [
     'dbname' => getenv("DB_NAME"),
     'user' => getenv("DB_USERNAME"),
     'password' => getenv("PASSWORD"),
-    'host' => getenv("HOST"),   #Ainda local
+    'host' => getenv("HOST"),
     'driver' => 'pdo_pgsql',
 ];
 
@@ -20,12 +20,16 @@ try {
     $name = $_POST['name'];
     $email = $_POST['email'];
 
+    //$findAdll = "SELECT * FROM " . getenv("TABLE_NAME");
+    //$users = $connection->executeQuery($findAdll);
+    //foreach ($users as $user) {
+    //    
+    //}
+    
     $save = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
     $connection->executeQuery($save);
 
+    header("https://guiarmanli.github.io/");
 } catch (Exception $error) {
-    echo $error->getMessage();
-    exit;
+    echo "ERRO!!!\n" . $error->getMessage();
 }
-
-
