@@ -20,14 +20,12 @@ try {
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    //$findAdll = "SELECT * FROM " . getenv("TABLE_NAME");
-    //$users = $connection->executeQuery($findAdll);
-    //foreach ($users as $user) {
-    //    
-    //}
-    
     $save = "INSERT INTO " . getenv("TABLE_NAME") . " (name, email) VALUES ('$name', '$email')";
     $connection->executeQuery($save);
+
+    
+    $findAllNames = "SELECT name FROM " . getenv("TABLE_NAME");
+    $userNames = $connection->executeQuery($findAllNames);
 
     header("https://guiarmanli.github.io/");
 } catch (Exception $error) {
