@@ -8,3 +8,7 @@ public/css/style.css.map
 public/temp.sass-cache/
 public/scss/style.css
 public/scss/style.css.map
+c.sass-cache/
+vendor/
+
+connection.env
