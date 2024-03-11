@@ -1,4 +1,10 @@
-c.sass-cache/
-vendor/
-
+.vscode/
 .env
+.htaccess
+
+app/vendor/
+
+public/css/style.css.map
+public/temp.sass-cache/
+public/scss/style.css
+public/scss/style.css.map
