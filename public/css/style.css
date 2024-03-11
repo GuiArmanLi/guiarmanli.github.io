@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Courier+Prime:ital@1&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #eeee; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #222222 !important; }
+  body h2,
+  body h3 {
+    margin-top: 25px; }
+  body ul {
+    display: flex;
+    justify-content: space-around; }
+  body li {
+    list-style-type: none; }
+  body a {
+    color: #eeee;
+    text-decoration: none; }
+  body input {
+    color: #222222; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 25px; }
+  main ul {
+    display: flex;
+    flex-direction: column; }
+
+@media (min-width: 1024px) {
+  main {
+    width: 50%;
+    margin: auto; } }
+
+/*# sourceMappingURL=style.css.map */
