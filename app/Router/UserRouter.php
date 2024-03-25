@@ -3,28 +3,26 @@ namespace App\Router;
 
 use App\Controller\UserController;
 
-global $strController;
-
-findOutPathController();
+$stringController = findOutPathController();
 findOutRouteHttpMethod();
 
-function findOutPathController()
+function findOutPathController(): string
 {
-    global $strController;
+    global $stringController;
 
     $uri = $_SERVER["REQUEST_URI"];
-    if ($uri == "/") {
-        $strController = "UserController";
-    } else {
-        $findClassNameRegex = "/([^\/]+)\.php$/";
-        preg_match($findClassNameRegex, $uri, $matches);
-        $strController = str_replace("Router", "Controller", $matches[1]);
-    }
+    $findEndPointRegex = "/([^\/]+)\.php$/";
+    preg_match($findEndPointRegex, $uri, $matches);
 
     if ($matches != null) {
-        var_dump($matches);
+        $stringController = str_replace("Router", "Controller", $matches[1]);
+    } else {
+        $stringController = $stringController == null ? "UserController" : null;
     }
+
+    return $stringController;
 }
+
 
 function findOutRouteHttpMethod()
 {
@@ -54,11 +52,11 @@ function findOutRouteHttpMethod()
 
 function existController(): bool
 {
-    global $strController;
+    global $stringController;
 
-    var_dump($strController);
+    var_dump($stringController);
 
-    $result = class_exists($strController);
+    $result = class_exists($stringController);
 
     if ($result) {
         var_dump("Deu bom");
