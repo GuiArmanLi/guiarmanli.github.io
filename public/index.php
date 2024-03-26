@@ -2,9 +2,7 @@
 <html lang="pt-BR">
 
 <?php
-require_once "../app/Model/UserModel.php";
-
-require_once "../app/Router/UserRouter.php";
+require_once "../app/user/UserRouter.php";
 ?>
 
 <head>
@@ -81,7 +79,7 @@ require_once "../app/Router/UserRouter.php";
       <p>Caso queira participar das versões de teste das minhas aplicações, envie suas
         informacoes pelo formulário abaixo.</p>
       <p>OBS.: Seu email ainda não está armazenado de forma segura &#128077;</p>
-      <form action="../app/src/Router/UserRouter.php" method="post">
+      <form action="../app/user/UserRouter.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Pedro" required />
         <label for="email">Email</label>
